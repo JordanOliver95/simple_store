@@ -27,6 +27,7 @@
     <% end %>
   </tbody>
 </table>
+<p><%= @products.uniq.pluck(:title).count %> the average price is: <%= @avg_price %>, and the total stock held is: <%= @total_stock %></p>
 
 <br>
 
